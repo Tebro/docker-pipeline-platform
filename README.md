@@ -43,3 +43,8 @@ The script starts one VM that runs all of the platform services. And another tha
 
 
 After this you are done, you can now create git projects, push them to Gogs, have Drone perform tests on your code. If you want to use Drone to automatically deploy your projects to Rancher you need to have Drone build and push Docker images to the docker hub so that Rancher can pull them from there.
+
+
+### Destroying the platfrom
+
+When you want to tear down the platform all you need to do is run the down.sh script that is provided. (`./down.sh`)
