@@ -27,6 +27,7 @@ Run the up.sh script provided in this repository.
 
 The script outputs the URLs to the various systems at the end.
 
+**Note:** For Gogs, the first account that registers is given admin rights.
 
 The script starts one VM that runs all of the platform services. And another that you can add as a compute node to Rancher by following the steps below:
 
