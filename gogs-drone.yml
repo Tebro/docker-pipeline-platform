@@ -1,0 +1,20 @@
+gogs:
+    image: gogs/gogs
+    ports:
+        - "2222:22"
+        - "3000:3000"
+    volumes:
+        - "gogs:/data"
+drone:
+    image: drone/drone
+    volumes:
+        - "drone:/var/lib/drone"
+        - "/var/run/docker.sock:/var/run/docker.sock"
+    restart: always
+    environment:
+        REMOTE_DRIVER: gogs
+        REMOTE_CONFIG: http://$INFRA_IP:3000
+        DATABASE_DRIVER: sqlite3
+        DATABASE_CONFIG: /var/lib/drone/drone.sqlite
+    ports:
+        - "8000:8000"
