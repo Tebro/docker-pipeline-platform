@@ -5,7 +5,7 @@ export INFRA_IP=$(docker-machine ip infra)
 
 echo "Infra IP is: $INFRA_IP"
 
-echo "Pointint Docker client to Infra server"
+echo "Point Docker client to Infra server"
 
 eval $(docker-machine env infra)
 
