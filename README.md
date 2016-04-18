@@ -42,7 +42,7 @@ The script starts one VM that runs all of the platform services. And another tha
 - Paste the command you copied from Rancher and the Node will join the cluster
 
 
-After this you are done, you can now create git projects, push them to Gogs, have Drone perform tests on your code. If you want to use Drone to automatically deploy your projects to Rancher you need to have Drone build and push Docker images to the docker hub so that Rancher can pull them from there.
+After this you are done, you can now create git projects, push them to Gogs, have Drone perform tests on your code. If you want to use Drone to automatically deploy your projects to Rancher you need to have Drone build and push Docker images to a Docker Registry so that Rancher can pull them from there.
 
 
 ### Destroying the platfrom
