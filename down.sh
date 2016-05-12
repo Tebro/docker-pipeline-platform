@@ -1,5 +1,4 @@
 
-docker-machine rm node
-docker-machine rm infra
+docker-machine rm -f infra node
 
 
